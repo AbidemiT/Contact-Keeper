@@ -50,7 +50,7 @@ router.post("/", auth,[check("name", "Name field is required")], async(req,res) 
 
         res.status(201).json(newContact);
     } catch (err) {
-        res.status(500).json({msg: "Server Err"});
+        res.status(500).json({msg: "Server Error"});
     }
 })
 

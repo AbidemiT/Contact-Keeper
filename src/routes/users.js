@@ -35,7 +35,7 @@ router.post("/", [check('name', "Name field can't be empty").not().isEmpty(), ch
 
         if (user) {
             return res.status(400).json({
-                msg: "Email already exist"
+                msg: "User already exist"
             });
         }
 
